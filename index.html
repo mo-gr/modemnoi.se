@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+        }
+        #connect {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<audio src="./connect.m4a" id="connect-audio" preload="auto"></audio>
+<button onclick="dialUp()" id="connect">Connect</button>
+<script>
+    const dialUp = () => document.getElementById('connect-audio').play();
+</script>
+</body>
+</html>
