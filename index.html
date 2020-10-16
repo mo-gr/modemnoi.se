@@ -7,19 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Connect</title>
     <style>
+        * {
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+        }
+        html {
+            height: 100vh;
+            width: 100%;
+        }
         body {
             display: flex;
-            height: 100vh;
+            height: 100%;
+            width: 100%;
+            background: gainsboro;
+            margin: 0;
         }
         #connect {
             display: block;
             margin: auto;
+        }
+        footer {
+            width: 100%;
+            padding: 1em;
+            text-align: center;
+            bottom: 0;
+            position: fixed;
+            font-size: 0.9em;
+            color: slategray;
+        }
+        footer a {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
 <body>
 <audio src="./connect.m4a" id="connect-audio" preload="auto"></audio>
 <button onclick="dialUp()" id="connect">Connect</button>
+<footer><a href="https://paypal.me/mograuel/3.50" target="_blank" rel="noopener noreferrer">Enjoyed your trip down memory lane? Why not say thanks with a ☕️?</a></footer>
 <script>
     const dialUp = () => document.getElementById('connect-audio').play();
 </script>
