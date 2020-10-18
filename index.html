@@ -25,6 +25,15 @@
         #connect {
             display: block;
             margin: auto;
+            width: 80vw;
+            max-width: 500px;
+            height: 100%;
+            max-height: 283px;
+            background: url('./PixelartModem56K_002.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
         }
         footer {
             width: 100%;
@@ -34,6 +43,8 @@
             position: fixed;
             font-size: 0.9em;
             color: slategray;
+            display: flex;
+            flex-direction: column;
         }
         footer a {
             text-decoration: none;
@@ -43,8 +54,11 @@
 </head>
 <body>
 <audio src="./connect.m4a" id="connect-audio" preload="auto"></audio>
-<button onclick="dialUp()" id="connect">Connect</button>
-<footer><a href="https://paypal.me/mograuel/3.50" target="_blank" rel="noopener noreferrer">Enjoyed your trip down memory lane? Why not say thanks with a ☕️?</a></footer>
+<button onclick="dialUp()" id="connect" aria-label="Connect"></button>
+<footer>
+    <a href="https://youtube.com/channel/UCHsqqRjziUaMwZgQZHw-n1w" target="_blank" rel="noopener noreferrer">Pixel art by Uri Tuchman </a>
+    <a href="https://paypal.me/mograuel/3.50" target="_blank" rel="noopener noreferrer">Enjoyed your trip down memory lane? Why not say thanks with a ☕️?</a>
+</footer>
 <script>
     const dialUp = () => document.getElementById('connect-audio').play();
 </script>
